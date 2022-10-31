@@ -1,0 +1,19 @@
+<form class="form mat-elevation-z8">
+    <h1>Atualizando Bolo</h1>
+    <mat-form-field class="full-width">
+        <mat-label>Nome</mat-label>
+        <input [(ngModel)]="bolo.nome" [formControl]="nome" required name="nome" maxlength="100" matInput placeholder="Ex. Linus Torvalds">   
+    </mat-form-field>
+    <mat-form-field class="full-width">
+        <mat-label>Preço</mat-label>
+        <input [(ngModel)]="bolo.preco" [formControl]="preco" required name="preco" maxlength="100" matInput placeholder="Ex. Linus Torvalds">   
+    </mat-form-field>
+    <mat-form-field class="full-width">
+        <mat-label>Categoria</mat-label>
+        <input [(ngModel)]="bolo.categoria" [readonly]=true [formControl]="categoria" required name="categoria" maxlength="100" matInput placeholder="Ex. Linus Torvalds">   
+    </mat-form-field>
+
+   
+    <button class="mat-elevation-z8" (click)="update()" mat-stroked-button color="accent">ATUALIZAR</button>
+    <button class="mat-elevation-z8" (click)="cancel()" mat-stroked-button color="warn">CANCELAR</button>
+</form>

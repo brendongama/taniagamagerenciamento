@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciamento de itens</title>
+</head>
+<body>
+  <header>
+      <mat-toolbar>
+        <span>Tania Gama Gerenciamento</span>
+      </mat-toolbar>
+  </header>
+  <main>
+    <mat-card>
+      <mat-card-title>O que você quer gerenciar ?</mat-card-title>
+      <mat-card-actions> 
+        <button mat-button routerLink="bolos">LISTAR BOLOS</button>
+        <button mat-button routerLink="doces">LISTAR DOCES</button>        
+        <button mat-button routerLink="cadastrarBolo">CADASTRAR BOLO</button>    
+        <button mat-button routerLink="cadastrar">CADASTRAR DOCE</button>
+      </mat-card-actions>
+      <router-outlet></router-outlet> 
+    </mat-card>
+  </main>
+  
+</body>
+</html>

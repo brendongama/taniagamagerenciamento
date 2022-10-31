@@ -1,0 +1,19 @@
+<form class="form mat-elevation-z8">
+    <h1>Atualizando Doce</h1>
+    <mat-form-field class="full-width">
+        <mat-label>Nome</mat-label>
+        <input [(ngModel)]="doce.nome" [formControl]="nome" required name="nome" matInput placeholder="Ex. Linus Torvalds">   
+    </mat-form-field>
+    <mat-form-field class="full-width">
+        <mat-label>Preço</mat-label>
+        <input [(ngModel)]="doce.preco" [formControl]="preco" required name="preco" matInput placeholder="Ex. Linus Torvalds">   
+    </mat-form-field>
+    <mat-form-field class="full-width">
+        <mat-label>Categoria</mat-label>
+        <input [(ngModel)]="doce.categoria" [readonly]=true [formControl]="categoria"  name="categoria" matInput placeholder="Ex. Linus Torvalds">   
+    </mat-form-field>
+
+   
+    <button class="mat-elevation-z8" (click)="update()" mat-stroked-button color="accent">ATUALIZAR</button>
+    <button class="mat-elevation-z8" (click)="cancel()" mat-stroked-button color="warn">CANCELAR</button>
+</form>
