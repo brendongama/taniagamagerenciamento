@@ -12,7 +12,7 @@ import { BoloService } from '../bolo.service';
 export class ListarBoloComponent implements OnInit {
 
   ELEMENT_DATA: IBolo[] = [];
-  displayedColumns: string[] = ['id', 'nome', 'preco', 'categoria', 'action'];
+  displayedColumns: string[] = ['nome', 'preco', 'categoria', 'action'];
   dataSource = new MatTableDataSource<IBolo>(this.ELEMENT_DATA);
 
   @ViewChild(MatPaginator)

@@ -11,7 +11,7 @@ import { DoceService } from '../doce.service';
 })
 export class ListarDoceComponent implements OnInit {
   ELEMENT_DATA: IDoce[] = [];
-  displayedColumns: string[] = ['id', 'nome', 'preco', 'categoria', 'action'];
+  displayedColumns: string[] = ['nome', 'preco', 'categoria', 'action'];
   dataSource = new MatTableDataSource<IDoce>(this.ELEMENT_DATA);
 
   @ViewChild(MatPaginator)
