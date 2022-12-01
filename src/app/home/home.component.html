@@ -7,18 +7,18 @@
 </head>
 <body>
   <header>
-      <mat-toolbar>
-        <span>Tania Gama Gerenciamento</span>
-      </mat-toolbar>
+    <div class="titulo-header">
+      <mat-card-title>Tânia Gama Gerenciamento</mat-card-title>
+    </div>
   </header>
   <main>
     <mat-card>
-      <mat-card-title>O que você quer gerenciar ?</mat-card-title>
+      <div class="titulo">
+        <mat-card-title>O que você quer gerenciar ?</mat-card-title>
+      </div>
       <mat-card-actions> 
-        <button mat-button routerLink="bolos">LISTAR BOLOS</button>
-        <button mat-button routerLink="doces">LISTAR DOCES</button>        
-        <button mat-button routerLink="cadastrarBolo">CADASTRAR BOLO</button>    
-        <button mat-button routerLink="cadastrar">CADASTRAR DOCE</button>
+        <button color="primary" mat-flat-button routerLink="bolos">BOLOS</button>
+        <button color="accent" mat-flat-button routerLink="doces">DOCES</button>        
       </mat-card-actions>
       <router-outlet></router-outlet> 
     </mat-card>
