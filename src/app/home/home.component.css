@@ -2,7 +2,35 @@
     flex: 1 1 auto;
   }
 
+  .header {
+    display: flex;
+    justify-content: center;
+  }
+
   mat-toolbar {
       background-color: darkgrey;
       height: 30px;
+  }
+
+  mat-card-actions {
+    display: flex;
+   justify-content: space-around;    
+  }
+
+  button {
+    width: 90%;
+    margin: 10px;
+  }
+
+  .titulo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .titulo-header {
+    display: flex;
+    justify-content: flex-start;
+    background-color: black;
+    color: aliceblue;
+    padding: 5px;
   }
