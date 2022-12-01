@@ -11,3 +11,7 @@ table {
 .caixaBaixa {
   text-transform: lowercase;
 } 
+
+td {
+  font-weight: bold;
+}
