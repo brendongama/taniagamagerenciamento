@@ -20,6 +20,11 @@ export class DoceService {
     return this.httpClient.put<IDoce>(url, doce);
   }
 
+  save(doce: IDoce):Observable<IDoce> {
+    const url = `${API_PATH}doce`;
+    return this.httpClient.post<IDoce>(url, doce);
+  }
+
   findById(id : any):Observable<IDoce>{
     const url = `${API_PATH}doce/${id}`;
     return this.httpClient.get<IDoce>(url);

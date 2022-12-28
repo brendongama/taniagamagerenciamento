@@ -21,6 +21,11 @@ export class BoloService {
     return this.httpClient.put<IBolo>(url, bolo);
   }
 
+  save(bolo: IBolo):Observable<IBolo> {
+    const url = `${API_PATH}bolo`;
+    return this.httpClient.post<IBolo>(url, bolo);
+  }
+
   findById(id : any):Observable<IBolo>{
     const url = `${API_PATH}bolo/${id}`;
     return this.httpClient.get<IBolo>(url);

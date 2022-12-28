@@ -1,0 +1,31 @@
+<form class="form mat-elevation-z8">
+    <h1>Cadastrar Doce</h1>
+    <mat-form-field class="full-width">
+        <mat-label>Nome</mat-label>
+        <input [(ngModel)]="doce.nome" [formControl]="nome" required name="nome" maxlength="100" matInput placeholder="Ex. Linus Torvalds">   
+    </mat-form-field>
+    <mat-form-field class="full-width">
+        <mat-label>Preço</mat-label>
+        <input [(ngModel)]="doce.preco" [formControl]="preco" required name="preco" maxlength="100" matInput placeholder="Ex. Linus Torvalds">   
+    </mat-form-field>
+    <h4>Categoria do Bolo</h4> 
+<mat-form-field appearance="fill">
+  <mat-label>Categoria</mat-label>
+  <select matNativeControl required [(ngModel)]="doce.categoria"
+  [formControl]="categoria" name="categoria">
+    <option value="DOCINHOBOLINHASIMPLES">Docinho Bolinha Simples</option>
+    <option value="DOCINHOBOLINHALUXO">Docinho Bolinha Luxo</option>
+    <option value="DOCINHOBOLINHAGOURMET">Docinho Bolinha Gourmet</option>
+    <option value="DOCINHOCOPINHO">Docinho Copinho</option>
+    <option value="BRIGADEIROCOLHER">Brigadeiro Colher</option>
+    <option value="CUPCAKES">CupCake</option>
+    <option value="DOCEDIVERSOS">Doces Diversos</option>
+    <option value="TORTAS">Tortas</option>
+    <option value="BEIJINHOUVA">Beijinho de Uva</option>
+  </select>
+</mat-form-field>
+
+   
+    <button class="mat-elevation-z8" (click)="save()" mat-stroked-button color="accent">CADASTRAR</button>
+    <button class="mat-elevation-z8" (click)="cancel()" mat-stroked-button color="warn">CANCELAR</button>
+</form>

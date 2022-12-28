@@ -20,6 +20,7 @@ import { ListarBoloComponent } from './listar-bolo/listar-bolo.component';
 import { UpdateBoloComponent } from './update-bolo/update-bolo.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UpdateDoceComponent } from './update-doce/update-doce.component';
+import {MatSelectModule} from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { UpdateDoceComponent } from './update-doce/update-doce.component';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

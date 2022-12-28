@@ -17,8 +17,12 @@
         <mat-card-title>O que você quer gerenciar ?</mat-card-title>
       </div>
       <mat-card-actions> 
-        <button color="primary" mat-flat-button routerLink="bolos">BOLOS</button>
-        <button color="accent" mat-flat-button routerLink="doces">DOCES</button>        
+        <button color="primary" mat-flat-button routerLink="bolos/cadastro">CADATRAR BOLOS</button>
+        <button color="primary" mat-flat-button routerLink="bolos">ATUALIZAR BOLOS</button>               
+      </mat-card-actions>
+      <mat-card-actions> 
+        <button color="accent" mat-flat-button routerLink="doces/cadastro">CADASTRAR DOCES</button>        
+        <button color="accent" mat-flat-button routerLink="doces">ATUALIZAR DOCES</button> 
       </mat-card-actions>
       <router-outlet></router-outlet> 
     </mat-card>

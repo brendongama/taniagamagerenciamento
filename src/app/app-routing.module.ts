@@ -15,7 +15,9 @@ const routes: Routes = [
       { path: 'bolos', component: ListarBoloComponent},
       { path: 'doces', component: ListarDoceComponent},   
       { path: 'bolos/update/:id', component: UpdateBoloComponent},  
-      { path: 'doces/update/:id', component: UpdateDoceComponent}         
+      { path: 'doces/update/:id', component: UpdateDoceComponent},  
+      { path: 'bolos/cadastro', component: CadastrarBoloComponent},
+      { path: 'doces/cadastro', component: CadastrarDoceComponent}        
     ]    
   }
 ];
